@@ -1,5 +1,5 @@
 include:
-  - './clickhouse/docker-compose-clickhouse.yaml'
+  - 'postgres/docker-compose-postgres.yaml'
   - './kafka/docker-compose-kafka.yaml'
   - './kafka/docker-compose-zookeeper.yaml'
   - './minio/docker-compose-s3.yaml'
