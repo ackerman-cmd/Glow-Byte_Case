@@ -1,0 +1,5 @@
+include:
+  - 'devops/docker-compose.yaml'
+  - 'upload_service/docker-compose-uploader.yaml'
+  - 'processor_service/docker-compose.yaml'
+  - 'prediction/docker-compose.yaml'

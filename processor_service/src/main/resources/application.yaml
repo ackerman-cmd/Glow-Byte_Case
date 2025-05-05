@@ -1,0 +1,29 @@
+spring:
+  kafka:
+    bootstrap-servers: kafka:9092
+    topic: document-uploaded
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    properties:
+      security.protocol: SASL_PLAINTEXT
+      sasl.mechanism: PLAIN
+      sasl.jaas.config: org.apache.kafka.common.security.plain.PlainLoginModule required username="admin" password="admin-secret";
+  datasource:
+    url: jdbc:postgresql://postgres-db:5432/default
+    username: admin
+    password: secret
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    properties:
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+minio:
+  url: http://minio:9000
+  access-key: admin
+  secret-key: password
+  bucket: data
+
+server:
+  port: 8081
