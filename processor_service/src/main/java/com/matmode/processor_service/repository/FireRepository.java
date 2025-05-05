@@ -25,4 +25,6 @@ public interface FireRepository extends JpaRepository<Fire, Long> {
 
     // Поиск по грузу (частичное совпадение)
     List<Fire> findByCargoContainingIgnoreCase(String cargo);
+
+    List<Fire> findByBatchId(String batchId);
 }

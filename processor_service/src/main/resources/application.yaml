@@ -24,3 +24,6 @@ minio:
   access-key: admin
   secret-key: password
   bucket: data
+
+server:
+  port: 8081

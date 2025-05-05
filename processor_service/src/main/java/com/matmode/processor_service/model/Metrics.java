@@ -22,9 +22,9 @@ public class Metrics {
     @Column(name = "batch_id", nullable = false, unique = true)
     private String batchId;
 
-    // ROC AUC score
-    @Column(name = "roc_auc", nullable = false)
-    private Double rocAuc;
+    // F1 score
+    @Column(name = "f1", nullable = false)
+    private Double f1;
 
     // Precision score
     @Column(name = "precision", nullable = false)
@@ -33,8 +33,4 @@ public class Metrics {
     // Recall score
     @Column(name = "recall", nullable = false)
     private Double recall;
-
-    // F1 score
-    @Column(name = "f1", nullable = false)
-    private Double f1;
 }

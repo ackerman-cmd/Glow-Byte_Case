@@ -44,4 +44,7 @@ public class Fire {
 
     @Column(name = "stack_number")
     private Integer stackNumber;
+
+    @Column(name = "batch_id", nullable = false)
+    private String batchId;
 }

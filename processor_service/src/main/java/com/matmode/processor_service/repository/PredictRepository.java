@@ -27,4 +27,6 @@ public interface PredictRepository extends JpaRepository<Predict, Integer> {
 
     // Поиск записей с вероятностью возгорания выше заданного значения
     List<Predict> findByFireProbabilityGreaterThanEqual(Double probability);
+
+    List<Predict> findByBatchId(String batchId);
 }
